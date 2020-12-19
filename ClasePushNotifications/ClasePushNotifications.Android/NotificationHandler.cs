@@ -19,6 +19,7 @@ namespace ClasePushNotifications.Droid
         public override void OnMessageReceived(RemoteMessage p0)
         {
             base.OnMessageReceived(p0);
+            new NotificationHelper().CreateNotification(p0.GetNotification().Title, p0.GetNotification().Body);
         }
     } 
 }
