@@ -35,8 +35,8 @@ namespace PushnotificationSender
 
                 var data = new
                 {
-                    to = "c_qKX_f7TialcqP9jRzbHx:APA91bEnPA1rzx8k8ZxNcJsvtOcSLpsEgW0aBJEvPO4MEqdBf46FuTZj1UZBD8bjmAb7NlJuImJeK42jko77DPPxyrJ5gt70DVE9QJcgN442ZJwL1pgTGKCy7OQpN5KMo_cJ_Kv0UEg4", // Uncoment this if you want to test for single device
-                    //to = "/topics/" + _topic,
+                   // to = "c_qKX_f7TialcqP9jRzbHx:APA91bEnPA1rzx8k8ZxNcJsvtOcSLpsEgW0aBJEvPO4MEqdBf46FuTZj1UZBD8bjmAb7NlJuImJeK42jko77DPPxyrJ5gt70DVE9QJcgN442ZJwL1pgTGKCy7OQpN5KMo_cJ_Kv0UEg4", // Uncoment this if you want to test for single device
+                    to = "/topics/" + _topic,
                     notification = new
                     {
                         title = _title,

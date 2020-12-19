@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Firebase.Iid;
+using Firebase.Messaging;
 
 namespace ClasePushNotifications.Droid
 {
@@ -15,7 +16,8 @@ namespace ClasePushNotifications.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            string token = FirebaseInstanceId.Instance.Token;
+           // string token = FirebaseInstanceId.Instance.Token;
+            FirebaseMessaging.Instance.SubscribeToTopic("Todos");
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
