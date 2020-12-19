@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Firebase.Iid;
 
 namespace ClasePushNotifications.Droid
 {
@@ -14,6 +15,8 @@ namespace ClasePushNotifications.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            string token = FirebaseInstanceId.Instance.Token;
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
